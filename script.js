@@ -8,14 +8,14 @@ let [, save] = btnArray;
 
 
 addQue.addEventListener("click", () => {
-    console.log("editer se")
+
     if (editer.style.display === "none") {
         editer.style.display = "block"
     } else { editer.style.display = "none" }
     alert("editer")
 });
 closeIcon.addEventListener("click", () => {
-    console.log("icon se")
+
     alert("icon")
     editer.style.display = "none";
     textArea[0].value = "";
