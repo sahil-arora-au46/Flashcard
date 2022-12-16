@@ -12,11 +12,11 @@ addQue.addEventListener("click", () => {
     if (editer.style.display === "none") {
         editer.style.display = "block"
     } else { editer.style.display = "none" }
-    alert("editer")
+
 });
 closeIcon.addEventListener("click", () => {
 
-    alert("icon")
+
     editer.style.display = "none";
     textArea[0].value = "";
     textArea[1].value = ""
@@ -25,7 +25,7 @@ closeIcon.addEventListener("click", () => {
 
 save.addEventListener("click", cardSaveUpdate)
 function cardSaveUpdate(event) {
-    console.log("save se")
+
 
     let cardContainer = document.querySelector(".cardContainer");
     //find id,if match replace,if not put new element
@@ -39,7 +39,7 @@ function cardSaveUpdate(event) {
     }
     else {
 
-        console.log(idArr.length, tempText)
+
         for (let i = 0; i < idArr.length; i++) {
             if (idArr[i].firstChild.innerText == tempText) {
                 foundId = true;
@@ -51,7 +51,7 @@ function cardSaveUpdate(event) {
 
 
     }
-    console.log(foundId)
+
     if (foundId) {
 
         let newEle = createCard();
@@ -88,7 +88,7 @@ function cardSaveUpdate(event) {
             console.log(parent)
             save.innerText = "Update"
             tempText = parent.firstChild.innerText;
-            editer.style.boxShadow = "5px 5px 10px black"
+
         })
     }
 
