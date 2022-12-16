@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hover:hover {
+  cursor: pointer;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #d0d0d0;
+  /* display: flex;
+  flex-direction: column; */
+}
+/* ------------addque btn-----starts*/
+#addQuestion {
+  color: #d97446;
+  font-size: 20px;
+  width: 180px;
+  border: 3px solid;
+  background-color: transparent;
+  border-color: #d97446;
+  box-shadow: 5px 5px 10px #7d7a79;
+  margin: 10px 20px;
+}
+/* ------------addque btn-----ends*/
+/*-----------que/ans creator box/cardcreator starts-----*/
+.editer {
+  position: relative;
+  width: 40%;
+  height: 300px;
+  border: 3px solid;
+  color: #3e82e9;
+  font-size: 20px;
+  display: none;
+
+  margin: 10px 15px;
+}
+textarea {
+  width: 342px;
+  height: 100px;
+  margin-left: 5px;
+}
+label {
+  margin: 5px 10px;
+}
+#save {
+  background-color: transparent;
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 30%;
+  font-size: 20px;
+  border: 3px solid;
+  color: #3e82e9;
+  box-shadow: 3px 3px 5px #2e3135;
+}
+i {
+  position: absolute;
+  top: 3px;
+  right: 2px;
+}
+/*-------------cardcreator--end--------------------*/
+/*----------------que/ans cardcontainr-----start*/
+.cardContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+/*----------------que/ans cardcontainr-end*/
+/*----------------que/anscard -starts--------*/
+.questionCard {
+  /* width: 200px;
+  height: 200px; */
+  background-color: #fff;
+  height: 170px;
+  flex-basis: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+  border: 3px solid;
+  margin-left: 5px;
+}
+h3,
+p {
+  margin-left: 10px;
+}
+#showAnswer {
+  color: #3e82e9;
+}
+#showAnswer:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cardBtn {
+  display: flex;
+  justify-content: space-around;
+}
+.questionCard button {
+  background-color: transparent;
+  font-size: 20px;
+  margin-bottom: 5px;
+  width: 90px;
+  border-color: #d97446;
+  color: #d97446;
+  box-shadow: 3px 3px 5px #2e3135;
+}
+/*---------------que/anscard---end------*/
